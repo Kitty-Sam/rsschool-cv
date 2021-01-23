@@ -1,0 +1,19 @@
+body {
+  max-width: 1100px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: rgb(253, 246, 252);
+}
+
+.header-wrapper {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer {
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+}
