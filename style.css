@@ -12,8 +12,13 @@ body {
   align-items: center;
 }
 
+.sum {
+    margin-left: 10px;
+    text-align: justify;
+
+  }
+
 .footer {
-  clear: both;
-  margin: 0 auto;
-  text-align: center;
-}
+    clear: both;
+    margin: 0 auto;
+    text-align: center;}
