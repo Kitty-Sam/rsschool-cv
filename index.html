@@ -1,89 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Samuta Kate</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Resume</title>
   </head>
-
-  <body>
-    <header class="header-wrapper">
-      <div>
-        <img src="avatar.jpg" alt="avatar" width="200px" height="300px" />
-      </div>
-      <div>
-        <h1>Samuta Kate</h1>
-      </div>
-    </header>
-    <main>
-      <div>
-        <h2>Summary</h2>
-        <div class="sum">
-          <p>
-            Education: 2010-2015 BSU Chemistry faculty Pharmacеutical chemisty.
-            I am good communicator and easy-going person. I can work with a big
-            amount of new information. Always try to find the solutions of my
-            problems, try to reach the best result. I am ready to work a lot and
-            to be a part of a big team. I decided to change my occupation,
-            because I want to try something else. And now I realize, that it
-            will be hard, but interesting expierence.
-          </p>
+  <body class="body">
+    <div class="main-container">
+      <header class="header">
+        <div class="header-left-big-line1"></div>
+        <div class="header-left-big-line2"></div>
+        <div class="border-avatar-white">
+          <img src="assets/image/avatar.jpg" alt="avatar" style="width: 100%" />
         </div>
-      </div>
-      <div>
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-      </div>
-      <div>
-        <h2>Code example. Game "sea battle"</h2>
-        <pre>
-          var location1 = Math.floor (Math.random ()*5);
-          var location2 = location1 + 1;
-          var location3 = location2 + 1;
-          
-          var guess;
-          var guesses = 0;
-          var hits = 0;
-          var isSunk = false;
-          var w = prompt("what is your name?");
-          alert("Hello " + w);
-          
-                while (isSunk == false) {
-                  guess = prompt("Are you ready to play with me? Input from 0 to 6");
-                    if (guess < 0 || guess > 6) {
-                      alert("Honey, you are bad guy, you dont know numbers, try again");
-                } else {
-                  guesses = guesses + 1;
-                    if (guess == location1 || guess == location2 || guess == location3)
-                {
-                  hits = hits + 1;
-                    if (hits == 3) 
-                      isSunk = true;
-                        alert("You are winner");
-                }
-                  } else {
-                    alert("Bad attempt");
-          
-                          }
-                        }
-                }
-        
-          var status="You are a good player, the game statistic is "+
-          (3/guesses);
-          alert (status);
-              </pre>
-      </div>
-      <div>
-        <h2>Contacts</h2>
-        <ul>
-          <li>e-mail: samutic40@gmail.com</li>
-          <li>phone: +375292610729</li>
-        </ul>
-        <footer class="footer">made in Belarus 02.2021</footer>
-      </div>
-    </main>
+
+        <div class="header-yellow-line"></div>
+        <div class="header-black-line"></div>
+        <div class="name">
+          <span class="name-user" style="font-size: 14px">Kate Samuta</span>
+          <h1 class="job-user" style="font-size: 19px">
+            Junior Web-Developer/JS
+          </h1>
+        </div>
+      </header>
+      <main class="main">
+        <div class="background">
+          <div class="medium-right-big-line"></div>
+          <div class="medium-right-small-line"></div>
+
+          <div class="left">
+            <div class="contacts">
+              <h3 class="contacts-name">Contacts</h3>
+              <ul class="contacts-list">
+                <li class="contacts-list-item">+3752926107**</li>
+                <li class="contacts-list-item">samutic*@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="skills">
+            <h3 class="skills-name">Skills</h3>
+            <ul class="skills-list">
+              <li class="skills-list-item">HTML</li>
+              <li class="skills-list-item">CSS</li>
+            </ul>
+          </div>
+          <div class="right">
+            <span id="About-me">About me</span>
+            <p>
+              Education: 2010-2015 BSU<br />
+              Chemistry faculty Pharmacеutical chemisty.<br />
+              I am good communicator and easy-going person. I can work with a
+              big amount of new information. Always try to find the solutions of
+              my problems, try to reach the best result. I am ready to work a
+              lot and to be a part of a big team. I decided to change my
+              occupation, because I want to try something else. And now I
+              realize, that it will be hard, but interesting expierence.
+            </p>
+            <span id="code">Code example. Game "sea battle"</span>
+
+            <pre class="code-example">
+var location1 = Math.floor(Math.random() * 5);
+var location2 = location1 + 1;
+var location3 = location2 + 1;
+
+var guess;
+var guesses = 0;
+var hits = 0;
+var isSunk = false;
+var w = prompt("what is your name?");
+alert("Hello " + w);
+
+while (isSunk == false) {
+  guess = prompt("Are you ready to play with me? Input from 0 to 6");
+  if (guess <0 || guess > 6) {
+    alert("Honey, you are bad guy, you dont know numbers, try again");
+  } else {
+    guesses = guesses + 1;
+    if (guess == location1 || guess == location2 || guess == location3) {
+      hits = hits + 1;
+      if (hits == 3) {
+        isSunk = true;
+        alert("You are winner");
+      }
+    } else {
+      alert("Bad attempt");
+    }
+  }
+}
+
+var status = "You are a good player;
+alert(status);
+        </pre
+            >
+          </div>
+          <div class="main-item-contacts-1"></div>
+          <div class="main-item-contacts-2"></div>
+          <div class="main-item-contacts-3"></div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="social">
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a class="social-list-link" href="" title="Instagram"
+                ><img
+                  class="social-list-img"
+                  src="assets/image/insta.svg"
+                  alt=""
+              /></a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-link" href="" title="Telegram"
+                ><img
+                  class="social-list-img"
+                  src="assets/image/telega.svg"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-right-big-line"></div>
+        <div class="bottom-right-small-line"></div>
+        <div class="bottom-left-big-line"></div>
+        <div class="bottom-left-small-line"></div>
+      </footer>
+    </div>
   </body>
 </html>
